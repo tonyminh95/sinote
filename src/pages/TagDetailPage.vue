@@ -1,11 +1,17 @@
 <template>
-<div>
-  Tag detail page
+<div class="full-height">
+  <NoteListAndEditor/>
 </div>
 </template>
 
 <script>
+import NoteListAndEditor from '@/components/NoteListAndEditor'
+
 export default {
+  components: {
+    NoteListAndEditor
+  },
+
   data () {
     return {
     }
@@ -14,10 +20,9 @@ export default {
   methods: {
   },
 
-  created () {
-  }
 }
 </script>
 
 <style>
 </style>
+
